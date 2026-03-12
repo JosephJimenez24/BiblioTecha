@@ -1,13 +1,16 @@
-# This is my main.py that implements OAuth 2.0 through the token.json to access Gmail API without my password.
-# It also used Gmail Query to filter my messages and operates when triggered, which is weekly.
-import functions_framework
-import os
-import json
-from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
+# BiblioTecha
+An automated personal library management system that uses Python, Gmail, API, and Google Cloud Functions to track book purchases, manage collections, and alert about duplicate books. I used methods like pandas, re, and isbnlib to attempt to structure the data, pattern matching, and working on communicating with the global book database.
 
-@functions_framework.cloud_event
-def run_weekly_scrape(cloud_event):
+This is my main.py that implements OAuth 2.0 through the token.json to access Gmail API without my password. It also used Gmail Query to filter my messages and operates when triggered, which is weekly.
+    
+    import functions_framework
+    import os
+    import json
+    from google.oauth2.credentials import Credentials
+    from googleapiclient.discovery import build
+
+    @functions_framework.cloud_event
+    def run_weekly_scrape(cloud_event):
     # This checks for login key in the current folder
     token_path = 'token.json'
     
@@ -31,14 +34,14 @@ def run_weekly_scrape(cloud_event):
             print(f"Friday Scrape Success: Found {len(messages)} potential books for BiblioTecha!")
     else:
         print("Error: token.json not found. You must upload your token file to the function.")
-}
 
-{
-# requirements.txt is the dependency manifest
-google-api-python-client
-google-auth-oauthlib
-functions-framework
-}
+
+requirements.txt is the dependency manifest
+    
+    google-api-python-client
+    google-auth-oauthlib
+    functions-framework
+
 ## enabled gmail API for accessing my email.
 <img width="1864" height="660" alt="OAuth2" src="https://github.com/user-attachments/assets/cbb84247-b40e-41e8-8c08-532ce9df8897" />
 
