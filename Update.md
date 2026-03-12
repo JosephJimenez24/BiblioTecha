@@ -42,26 +42,29 @@ requirements.txt is the dependency manifest
     google-auth-oauthlib
     functions-framework
 
-## enabled gmail API for accessing my email.
+### enabled gmail API for accessing my email.
 <img width="1864" height="660" alt="OAuth2" src="https://github.com/user-attachments/assets/cbb84247-b40e-41e8-8c08-532ce9df8897" />
 
-## I added a Cloud Schduler for weekly triggers, which is on Fridays at 9AM since.
+### I added a Cloud Schduler for weekly triggers, which is on Fridays at 9AM since.
 <img width="1575" height="376" alt="CloudScheduler" src="https://github.com/user-attachments/assets/5b86cd9b-9373-4a4d-b1ec-92c0b836fcc6" />
 
-## A successful scrape 
+### A successful scrape 
 <img width="1871" height="1254" alt="SuccessfulScrape" src="https://github.com/user-attachments/assets/6a2f6984-c635-4baa-8ec1-002f81f30119" />
 
-## I also made a App Script to receive updates from my Python script and sent to my Google Sheets
+### I also made a App Script to receive updates from my Python script and sent to my Google Sheets
 <img width="975" height="686" alt="image" src="https://github.com/user-attachments/assets/2c785888-f0f9-44b6-8d9f-cb58c6f5a7e2" />
 
-## I have a Google Sheet master copy, which i still need to work on little but is the Book Vault
+### I have a Google Sheet master copy, which i still need to work on little but is the Book Vault
 {https://docs.google.com/spreadsheets/d/1bSOu3PkeZWJapmyebbJEaj1bxzJV3vFLb-pHhYRNdgs/edit?usp=sharing}
 
-## Library Cloud Backlog Completed
+### Library Cloud Backlog Completed
 <img width="1716" height="994" alt="image" src="https://github.com/user-attachments/assets/414c8b9d-711a-4717-91cb-a8c61d0b5e56" />
 
-## Digital Auto Syncing Completed
+### Digital Auto Syncing Completed
 <img width="1714" height="1047" alt="image" src="https://github.com/user-attachments/assets/a1902026-1cea-4d62-98fb-f542c385aa27" />
 
 ## Burndown Chart:
 {https://docs.google.com/spreadsheets/d/1XWVIsQHVC30msORizZhnYbKjmshPoTg3H-2IQtNPyxs/edit?usp=sharing}
+
+## Journal Entry: 
+Moving the BiblioTecha project into the cloud was a significant learning curve with a lot of trails an error. I was able to successfully navigated Google Cloud’s security protocols (OAuth 2.0 and token management), which was a big win me and the project's automation goals is set. Although, I did learn that cloud environments are much less forgiving than local scripts; small configuration errors in the "Entry Point" or environment variables can cause complete deployment failures. In the next sprint, I plan to focus more on defensive coding to handle varied email formats from different book vendors more reliably.
